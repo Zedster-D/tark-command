@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  /* Futuristic glitch and pulsing effects */
+  .hud-glow-cyan {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+  }
+  .hud-glow-red {
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
+  }
+  .hud-glow-amber {
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+  }
+  .grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+  }
+}
+
+/* Animations */
+@keyframes scanning {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scan-line {
+  animation: scanning 4s linear infinite;
+}
+

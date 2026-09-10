@@ -1,0 +1,6 @@
+{
+  "name": "TARK Command Center",
+  "description": "An autonomous full-stack dashboard for process monitoring, threat detection alerting, and automated AI scheduling.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
